@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int i, j, x, y;
+
+    for (i = 0; i <= 19; i++) {
+        for (j = 0; j <= 39; j++) {
+            x = j - 20;
+            y = 10 - i;
+            if ((x * x * y * y * (x * x + y * y - 100)) <= 0) {
+                printf("*");
+            } else {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
